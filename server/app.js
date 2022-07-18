@@ -1,7 +1,7 @@
 const express = require("express");
 const cors = require("cors");
 const menu = {
-  starter: ["garlic bread", "chicken soup", "salad"],
+  starters: ["garlic bread", "chicken soup", "salad"],
   mains: ["burger & chips", "steak", "roast beef"],
   desserts: ["cake", "ice cream", "jelly"],
   specials: {
@@ -25,9 +25,7 @@ app.get("/", (req, res) => {
 
 app.get("/menu", (req, res) => {
   // instead of res.send() as it needs to be json code, but still works so... :P
-  res.json({
-    menu,
-  });
+  res.json(menu);
 });
 
 // works for /specials/monday, /specials/tuesday, etc...
