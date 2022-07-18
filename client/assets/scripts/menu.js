@@ -6,8 +6,9 @@ function displayMenu(data) {
   starters.textContent = "Starters";
 
   menu.appendChild(starters);
+  console.log("data.starters: ", data.starters);
 
-  data["starters"].forEach((s) => {
+  data.starters.forEach((s) => {
     const item = document.createElement("p");
     item.textContent = s;
     menu.appendChild(item);
@@ -23,7 +24,7 @@ async function loadMenu() {
 
     displayMenu(data); // called out function with argument passed through it
   } catch (error) {
-    alert("There was a problem communicating with the server.");
+    console.log("There was a problem communicating with the server.");
   }
 }
 loadMenu();
