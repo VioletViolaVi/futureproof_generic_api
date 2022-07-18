@@ -1,4 +1,4 @@
-function displayRestaurantDetails() {
+function displayRestaurantDetails(data) { // data needs to be passed through so add the param to make that happen
   const heading = document.getElementById("restaurantName");
   heading.textContent = data["name"];
 
