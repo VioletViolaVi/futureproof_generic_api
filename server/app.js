@@ -26,7 +26,7 @@ app.get("/", (req, res) => {
 app.get("/menu", (req, res) => {
   // instead of res.send() as it needs to be json code, but still works so... :P
   res.json({
-    name: "Restaurant menu",
+    menu,
   });
 });
 
