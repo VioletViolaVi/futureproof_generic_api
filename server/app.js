@@ -1,6 +1,5 @@
 const express = require("express");
 const cors = require("cors");
-const app = express();
 const menu = {
   starter: ["garlic bread", "chicken soup", "salad"],
   mains: ["burger & chips", "steak", "roast beef"],
@@ -10,6 +9,7 @@ const menu = {
     tuesday: "filet mignon",
   },
 };
+const app = express();
 
 // tell app to allow cross-origin request
 app.use(cors());
@@ -25,7 +25,9 @@ app.get("/", (req, res) => {
 
 app.get("/menu", (req, res) => {
   // instead of res.send() as it needs to be json code, but still works so... :P
-  res.json("Restaurant menu");
+  res.json({
+    name: "Restaurant menu",
+  });
 });
 
 // works for /specials/monday, /specials/tuesday, etc...
