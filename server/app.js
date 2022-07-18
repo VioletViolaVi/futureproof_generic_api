@@ -9,6 +9,10 @@ const menu = {
     tuesday: "filet mignon",
   },
 };
+const cors = require("cors");
+
+// tell app to allow cross-origin request
+app.use(cors());
 
 app.get("/", (req, res) => {
   res.json("Welcome to McDona's");
