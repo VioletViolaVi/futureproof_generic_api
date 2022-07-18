@@ -1,3 +1,8 @@
+body {
+  background-color: aliceblue;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
 h1 {
-    color: chartreuse;
+  color: chartreuse;
 }
