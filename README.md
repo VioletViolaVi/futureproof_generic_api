@@ -1,1 +1,1 @@
-# futureproof_generic_api
+# Futureproof Generic API
