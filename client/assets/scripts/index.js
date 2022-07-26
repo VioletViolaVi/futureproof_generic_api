@@ -3,6 +3,9 @@ function displayRestaurantDetails(data) {
   const heading = document.getElementById("restaurantName");
   heading.textContent = data["name"];
 
+  console.log("data: ", data);
+  console.log("data['name']: ", data["name"]);
+
   const year = document.getElementById("establishedYear");
   year.textContent = data["name"];
 
